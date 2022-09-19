@@ -1,3 +1,16 @@
+---
+import Card from "./card";
+
+const featureList = [
+  "CHAIN AGNOSTIC",
+  "COMPOSABLE",
+  "Trustless",
+  "Smooth like web2",
+];
+
+const idList = ["ray@rainbow", "ray@fetcch", "ray@wagpay"];
+---
+
 <!-- Feature section -->
 <section
   class="mt-16 mx-auto max-w-7xl px-4 sm:mt-32 lg:mt-72 flex flex-col items-center space-x-2 xl:space-y-8 text-white"
@@ -20,7 +33,18 @@
     <div
       class="col-span-1 h-[337px] bg-[#0D0B11] flex items-center justify-center rounded-lg"
     >
-      <span class="text-3xl text-[#FF5D46] font-bold">CHAIN AGNOSTIC</span>
+      <div
+        class="flex items-center text-white w-full h-full justify-center relative"
+      >
+        <div class="bg-transparent w-full h-full absolute z-10"></div>
+        <Card
+          client:load
+          slides={featureList}
+          classes={"text-3xl"}
+          numberOfSlides={1}
+          delay={3000}
+        />
+      </div>
     </div>
     <div
       class="col-span-1 bg-[#0D0B11] rounded-lg flex flex-col justify-evenly items-start p-6"
@@ -33,9 +57,18 @@
       </p>
     </div>
     <div
-      class="col-span-1 bg-[#0D0B11] rounded-lg flex flex-col justify-evenly items-start p-6"
+      class="col-span-1 bg-[#0D0B11] rounded-lg flex flex-col justify-evenly items-start space-y-4 md:space-y-2 p-4"
     >
-      <span class="font-bold text-xl text-[#FF5D46] h-24">ray@rainbow</span>
+      <div class="h-24 relative">
+        <div class="bg-transparent w-full h-full absolute z-10"></div>
+        <Card
+          client:load
+          slides={idList}
+          classes={"text-lg md:text-xl"}
+          numberOfSlides={3}
+          delay={2000}
+        />
+      </div>
       <h2 class="font-bold text-xl text-white">Build your brand</h2>
       <p>
         Say to no complex wallet address, FetcchX lets wallet users create there
