@@ -1,6 +1,5 @@
 ---
 import Header from "./Header.astro";
-import Test from "./Test";
 ---
 
 <!-- Hero section -->
@@ -11,7 +10,17 @@ import Test from "./Test";
   >
     <img src="/assets/hero-bg.svg" alt="" class="hidden xl:block -z-10" />
     <div class="absolute max-w-4xl mx-auto px-4 md:mt-10">
-      <Test client:load />
+      <div
+        class="w-full flex items-center justify-center space-x-1 sm:space-x-2 text-white"
+      >
+        <span class="sm:text-sm md:text-base text-mobile">Chain agnostic</span>
+        <img src="/assets/star.svg" alt="star" class="w-2 sm:w-6" />
+        <div class="sm:text-sm md:text-base text-mobile">Permission less</div>
+        <img src="/assets/star.svg" alt="star" class="w-2 sm:w-6" />
+        <div class="sm:text-sm md:text-base text-mobile">Trustless</div>
+        <img src="/assets/star.svg" alt="star" class="w-2 sm:w-6" />
+        <div class="sm:text-sm md:text-base text-mobile">Smooth like web2</div>
+      </div>
       <h1
         class="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl select-text"
       >
