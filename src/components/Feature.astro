@@ -13,7 +13,7 @@ const idList = ["ray@rainbow", "ray@fetcch", "ray@wagpay"];
 
 <!-- Feature section -->
 <section
-  class="mt-16 mx-auto max-w-7xl px-4 sm:mt-32 lg:mt-72 flex flex-col items-center space-x-2 xl:space-y-8 text-white"
+  class="mx-auto max-w-7xl px-4 sm:mt-32 flex flex-col items-center space-x-2 xl:space-y-8 text-white"
 >
   <h1
     class="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl"
@@ -28,7 +28,7 @@ const idList = ["ray@rainbow", "ray@fetcch", "ray@wagpay"];
   </p>
   <!-- Card grid  -->
   <section
-    class="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3 grid-rows-2 w-full"
+    class="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3 grid-rows-2 w-full mt-12"
   >
     <div
       class="col-span-1 h-[337px] bg-[#0D0B11] flex items-center justify-center rounded-lg"
@@ -40,7 +40,8 @@ const idList = ["ray@rainbow", "ray@fetcch", "ray@wagpay"];
         <Card
           client:load
           slides={featureList}
-          classes={"text-3xl"}
+          classes={"text-3xl justify-center"}
+          direction={"vertical"}
           numberOfSlides={1}
           delay={3000}
         />
@@ -59,12 +60,13 @@ const idList = ["ray@rainbow", "ray@fetcch", "ray@wagpay"];
     <div
       class="col-span-1 bg-[#0D0B11] rounded-lg flex flex-col justify-evenly items-start space-y-4 md:space-y-2 p-4"
     >
-      <div class="h-24 relative">
+      <div class="h-24 w-full relative">
         <div class="bg-transparent w-full h-full absolute z-10"></div>
         <Card
           client:load
           slides={idList}
           classes={"text-lg md:text-xl"}
+          direction={"vertical"}
           numberOfSlides={3}
           delay={2000}
         />

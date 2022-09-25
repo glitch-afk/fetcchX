@@ -24,7 +24,7 @@ module.exports = {
     },
     extend: {
       maxWidth: {
-        "8xl": "88rem",
+        "8xl": "96rem",
       },
       colors: {
         fetcch_dark: "#06020D",
